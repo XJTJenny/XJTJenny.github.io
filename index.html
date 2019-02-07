@@ -1,0 +1,163 @@
+<html>
+	<head>
+		<title>Introduction to JS</title>
+		
+		<script>
+		
+		
+			var x = 1;
+			var y = 1.1;
+			var z = "ESSE 46";
+			
+			var c1 = 2;
+			var c2 = 4;
+			
+			var ans = c1 + c2;
+		
+		
+			function changeText()
+			{
+				//document.getElementById('demo').innerHTML= 'Hello ESSE 4600';
+				
+				var name = document.getElementById('TextBox').value;
+				document.getElementById('demo').innerHTML = "Greetings " + name + "!";
+			}
+		
+			function add()
+			{
+				var value1 = document.getElementById('input1').value;
+				var value2 = document.getElementById('input2').value;
+				
+				var float1 = parseFloat(value1);
+				var float2 = parseFloat(value2);
+				
+				var answer = float1 + float2;
+				
+				document.getElementById('answer').innerHTML = "Answer: " + answer;
+			}
+			
+			function subtract()
+			{
+				var value1=document.getElementById('input1').value;
+				var value2=document.getElementById('input2').value;
+		
+				var float1=parseFloat(value1);
+				var float2=parseFloat(value2);
+		
+				var answer=float1-float2;
+				document.getElementById('answer').innerHTML="Answer:"+answer;
+			}
+			
+			function multiply()
+			{
+				var value1=document.getElementById('input1').value;
+				var value2=document.getElementById('input2').value;
+		
+				var float1=parseFloat(value1);
+				var float2=parseFloat(value2);
+		
+				var answer=float1*float2;
+				document.getElementById('answer').innerHTML="Answer:"+answer;
+			}
+			
+			function divide()
+			{
+				var value1=document.getElementById('input1').value;
+			   	var value2=document.getElementById('input2').value;
+		
+				var float1=parseFloat(value1);
+				var float2=parseFloat(value2);
+				if(value2==0)
+				{
+					alert('error')
+				}
+				if(value2!=0)
+				{
+					var answer=float1/float2;
+					document.getElementById('answer').innerHTML="Answer:"+answer;
+				}
+
+			}
+			
+			function verify()
+			{
+				var value = document.getElementById('robot').checked;
+				
+				if (value == true)
+				{
+					alert('Hey Robot!');
+				}
+				else
+				{
+					alert('Hello Human!');
+				}
+			}
+			
+			
+			/*var i = 0;
+			var calculate = 0;
+			for (i=0;i<10;i++)
+			{
+				calculate = calculate + 2;
+			}*/
+			
+			function printTriangle()
+			{
+				var value = document.getElementById('triangle').value;
+				var int1 = parseInt(value);
+				
+				var i = 0;
+				
+				for (i=0; i<int1; i++)
+				{
+					document.getElementById('result').innerHTML += "<br/>";
+					
+					var j = 0;
+					for (j=0; j<i+1; j++)
+					{
+						document.getElementById('result').innerHTML += "*";
+					}
+				}
+			}
+		
+			
+		</script>
+		
+	</head>
+	<body>
+	<h2>What can JavaScript Do?</h2>
+	
+	
+	<!--
+	
+	<p id="demo">Hello ESSE 4600!</p>
+	
+	<input type="text" id="TextBox" />
+	
+	<button type="button" onclick="changeText()">Click Me!</button>
+	
+	-->
+	
+	<input type="text" id="input1" />
+	<input type="text" id="input2" />
+	<button type="button" onclick="add()">+</button>
+	<button type="button" onclick="subtract()">-</button>
+	<button type="button" onclick="multiply()">*</button>
+	<button type="button" onclick="divide()">/</button>
+	
+	<p id="answer">Answer:</p>
+	
+	<br/>
+	
+	<p><input type="checkbox" id="robot" />Are you a Robot?</p>
+	<button type="button" onclick="verify()">Verify</button>
+	
+	<br />
+	
+	<input type="text" id="triangle" />
+	<button type="button" onclick="printTriangle()">Print</button>
+	<p id="result"></p>
+	
+	
+	</body>
+</html>

@@ -1,0 +1,147 @@
+<html>
+	<head>
+		<!--  Give a name to website -->
+		<title>Jingting's Resume</title>
+		<style type="text/css">
+			/*  Style head3:change color, background-color and font 
+				of h3  */
+			h3{
+				color:grey;
+				background-color: lightblue;
+			}
+			/* Style image: decide position and border of every image  */
+			img{
+				float:right;
+				border: 1px solid black;
+			}
+			/* 
+			If link is not clicked, color is black;
+			If link is visited, color is blue
+			 */
+			a:link{color:black;}
+			a:visited{color:blue;}
+			/** Style map linked to Google Map    */
+			iframe{
+				width: 130px;
+				height:130px;
+				float:right;
+				border: 0;
+			}
+		</style>
+	
+	</head>
+	<body>
+		<!--  Seperate content to several sections	-->
+		<section>
+			<h2>My Resume</h2>		
+		</section>
+		<!--
+			<h3>is used to add head to each sections
+			<p>is used to add content to each section
+			<img> is used to add image to website, 'width' and 'height' decides size of it
+		-->
+		<section>
+			<h3>Basic Info</h3>
+			<p>Name: Jingting Xie</p>
+			<img src="MyPhoto.jpg" width="100" height="140" />
+			<p>Gender: Female</p>
+			<p>Birth Date: May 30th, 1998</p>
+			<p>Identity: University student</p>
+			<p>Degree: Undergraduate</p>
+			<p>Major: Geodesy and Geomatics Engineering</p>
+		</section>
+
+		<section>
+			<h3>Contacts</h3>
+			<p>Mobile: 437-971-1621</p>
+			<p>Email: 15386058760@163.com</p>
+			<!-- 
+				<a href="">is used to add a link in this website
+				target="black" means open the link in another window
+			   -->
+			<p>Facebook: Jingting Xie <a href="https://www.facebook.com/" target="black">Go to Facebook</a></p>
+			<p>Wechat: x1169443923</p>
+		</section>
+		<section>
+			<h3>Educational experience</h3>
+			<!--
+				<table>is used to add a table, 'border' decides width of border, 'cellspacing' decides space of each cell
+				<thead>is used to add head of a table, each <tr> corresponds to one line, each <th> corresponds to one head
+				<tbody>is used to add body of a table, each <tr> corresponds to one line, each <td> corresponds to one cell of the body  
+			-->
+			<table border="1" cellsize="0">
+				<thead>
+					<tr>
+						<th>Start Date</th>
+						<th>End Date</th>
+						<th>School</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>September 01, 2003</td>
+						<td>July 01, 2009</td>
+						<td>Chuanshan Primary School</td>
+					</tr>
+					<tr>
+						<td>September 01, 2009 </td>
+						<td>July 01, 2012</td>
+						<td>Chuanshan Middle School</td>
+					</tr>
+					<tr>
+						<td>Semtember 01, 2012</td>
+						<td>July 01, 2015</td>
+						<td>Hengyang No.1 High School</td>
+					</tr>
+					<!-- 
+							<iframe> is used to add a map
+							Click the link and map can be opened in a new window    -->
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6035.276635447037!2d114.36331640455366!3d30.536527011138446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x342ea56c78f673d3%3A0x3a7b780f979236!2z5q2m5rGJ5aSn5a2m!5e0!3m2!1szh-CN!2sca!4v1549487482776" ></iframe>
+					<tr>
+						<td>Semtember 01, 2015</td>
+						<td>July 01, 2019</td>
+						<td>Wuhan University(Location is displayed in the map)</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section>
+			<h3>Employment experience</h3>
+			<table border="1" cellsize="0">
+				<tr>
+					<th>Start Date</th>
+					<th>End Date</th>
+					<th>School</th>
+				</tr>
+				<tr>
+					<td>None</td>
+					<td>None</td>
+					<td>None</td>
+				</tr>
+			</table>
+		</section>
+		<section>
+			<h3>Skills</h3>
+			<h4>Sports</h4>
+			<p>Skipping Rope, Swimming, Pingpong (In fact, I'm not really good at sports)</p>
+
+			<!--  <img> is used to add image to website, 'width' and 'height' decides size of it  -->
+			<img src="GuZheng.jpg" width=“180" height="90">
+			<h4>Music</h4>
+			<p>Guzheng ( A Chinese traditional instrument)</p>
+
+			<!--   <a href="">is used to add a link   -->
+			<p><a href="https://y.qq.com/n/yqq/song/003JECa71QGMca.html" target="blank">Listen to a piece of music</a> </p>
+		</section>
+		<section>
+			<h3>Hobbies</h3>
+			<h4>Indoor activities</h4>
+			<p>Reading novels, listening to light music or classical music, watching movies, sleeping...
+			
+			<h4>Outdoor activities</h4>
+			<p>Shopping, travelling, playing badminton,swimming, go sightseeing...</p>
+		</section>
+		
+	</body>
+
+</html>

@@ -1,0 +1,164 @@
+<html>
+	<head>
+		<!-- Give a name to this website  -->
+		<title>Jingting Xie</title> 
+		<script>
+			/**
+			*Function submitInfo:
+			*Get:Name and Email
+			*Output: Alert 'name'-'email'
+			*/
+			function submitInfo()
+			{
+				var value1=document.getElementById('name').value;
+				var value2=document.getElementById('email').value;
+				
+				alert(value1+'-'+value2);
+			}
+			
+		</script>
+		<style>
+
+			/*
+				Style h3: change color, background-color and font 
+				of h3
+			*/
+			h3{
+				color:maroon;
+				background-color: lightgrey;
+				font:georgia;
+			}
+
+			/*
+			If link is not clicked, color is black;
+			If link is visited, color is blue
+			If link is hovered, color is green
+			*/
+			a:link{color:black;}
+			a:visited{color:blue;}
+			a:hover{color:green;}
+
+			/*
+				Style image: decide width, height, border and 
+				position of image
+			*/
+			img{
+				width:100px;
+				height:140px;	
+				border: 1px solid black;
+				float:right;			 
+			}
+	
+		</style>
+	</head>
+		<body>
+			<h2>Batman</h2>
+			<!--
+				Seperate content to several sections
+				<h3>is used to add head to each sections
+				<p>is used to add content to each section
+			-->
+			<section>
+				<h3>About</h3>
+				<p>Bla bla!</p>
+				<p>Hi,I'm Batman. I love 
+
+				<!--  <a href="">is used to add a link in this website-->
+				<a href="http://www.yorku.ca/gradess/courses.html"target="blank">User interface design</a>
+			</section>
+			<!--
+				<table>is used to add a table, 'border' decides width of border, 'cellspacing' decides space of each cell
+				<thead>is used to add head of a table, each <tr> corresponds to one line, each <th> corresponds to one head
+				<tbody>is used to add body of a table, each <tr> corresponds to one line, each <td> corresponds to one cell of the body  
+			-->
+			<section>
+				<h3>Course</h3>
+				<p>Here are some courses I've taken.</p>
+				<!--    <img> is used to add image to website   -->
+				<img  src="MyPhoto.jpg" />
+				<table border="1" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Course Number</th>
+							<th>Course Title</th>
+							<th>Semester Taken</th>						
+						</tr>
+						<tr>
+							<!--  'colspan' is used to merge several cells  -->
+							<th colspan="3">For Credit</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<!-- chnage the color of the cell-->
+							<td style="color:lightseagreen">6.813</td>
+							<td style="color:green">User Interface Design</td>
+							<td>Spring 2019</td>
+						</tr>
+						<tr>
+							<td style="color:lightseagreen">6.034</ts>
+							<td>Foudation of Geodesy</td>
+							<td>Fall 2017</td>
+						</tr>
+						<tr>
+							<td style="color:lightseagreen">6.006</td>
+							<td>Advanced Mathematics</td>
+							<td>Fall 2016</td>
+						</tr>
+						
+					</tbody>
+					<thead>
+						<!--
+							colspan="n" is used to  merge n cells to one
+						-->
+						<th colspan="3">Listener</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td style="color:lightseagreen">6.867</td>
+							<td>Data Structure</td>
+							<td>Fall 2018</td>						
+						</tr>
+						<tr>
+							<td style="color:lightseagreen">6.830</td>
+							<td>C language Principle</td>
+							<td>Fall 2017</td>
+						</tr>
+					</tbody>
+					
+				</table>
+			</section>
+			<section>
+				<h3>Interests</h3>
+				<p> I am interested in novels,comedies, and microblog news.</p>
+			</section>
+			
+			<!--
+				<form>is used to add a form, 'get' means get input value of textbox. Each <div> means one row.
+				<lable> is used to add lable to textbox, <input> is used to input different tools such as textbox, button...
+			-->
+			<section>
+				<h3>Subscribe to Newsletter</h3>
+				<p>Would love to recieve newsletter. Submit Below</p>
+				<form action="" method="get" class="form-example">
+					<div class="form-example">
+						<label for="name">Name</label>
+						<input type="text" id="name" > 
+					</div>
+					<div class="form-example">
+						<label for="email">Email</label>
+						<input type="email" id="email" >
+					</div>
+					
+					<div>
+						<input type="button" value="Submit" onclick="submitInfo()">
+					</div>
+					
+				</form>
+				
+			</section>
+			
+			
+			
+		</body>
+</html>
